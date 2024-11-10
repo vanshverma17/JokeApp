@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Sour Gummy", sans-serif;
+    background: linear-gradient(135deg, #6e7bff, #3e4c7f);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    padding: 20px;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    margin-right: 170px;
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 12px;
+    margin: 10px 0;
+    width: 90%;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 1.2em;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #6e7bff;
+    box-shadow: 0 0 5px rgba(110, 123, 255, 0.8);
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #6e7bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #3e4c7f;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+div.joke-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin-top: 20px;
+    overflow-wrap: break-word;  
+    word-wrap: break-word;      
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    color: #444;
+    font-size: 30px;
+    line-height: 1.6;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;       
+    white-space: normal;         
+    max-width: 100%;            
+    word-break: break-word;      
+    margin-top: 20px;           
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    form {
+        padding: 20px;
+        margin-right: 0;
+        max-width: 90%;
+    }
+
+    input[type="text"] {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    div.joke-container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    form {
+        padding: 15px;
+        margin-right: 0;
+        max-width: 95%;
+    }
+
+    input[type="text"] {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    div.joke-container {
+        padding: 15px;
+        max-width: 95%;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.9em;
+        padding: 12px;
+    }
+}
